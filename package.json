@@ -1,0 +1,15 @@
+{
+  "name": "gerard-dj-prototype",
+  "version": "0.1.0",
+  "description": "Prototipo web/app de cabina DJ all-in-one con decks motorizados y mixer 4 canales",
+  "main": "main.js",
+  "scripts": {
+    "start:web": "python3 -m http.server 8080",
+    "start:app": "electron .",
+    "pack": "npx electron-packager . GerardDJ --platform=linux --arch=x64 --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^31.0.2",
+    "electron-packager": "^17.1.2"
+  }
+}
