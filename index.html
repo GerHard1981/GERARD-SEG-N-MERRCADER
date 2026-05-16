@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerard DJ Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>GERARD DJ SYSTEM</h1>
+    <div class="global-controls">
+      <label>Master
+        <input type="range" min="0" max="100" value="72">
+      </label>
+      <label>Tono
+        <input type="range" min="-12" max="12" value="0">
+      </label>
+      <label>Mic
+        <input type="range" min="0" max="100" value="50">
+      </label>
+      <label>Auriculares
+        <input type="range" min="0" max="100" value="60">
+      </label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="deck deck-left">
+      <h2>Deck 1 (Motorizado)</h2>
+      <div class="jogwheel"></div>
+      <div class="transport">
+        <button>Play/Pause</button><button>Cue</button><button>Sync</button>
+      </div>
+      <div class="perf-grid">
+        <button>Hot Cue</button><button>Loop</button><button>Beat Jump</button><button>Slip</button>
+      </div>
+      <label>Pitch<input type="range" min="-50" max="50" value="0"></label>
+    </section>
+
+    <section class="mixer">
+      <h2>Mixer Central (4 Canales)</h2>
+      <div class="channels">
+        <article class="channel">
+          <h3>CH 1</h3>
+          <label>Gain<input type="range" min="0" max="100" value="55"></label>
+          <label>High<input type="range" min="-100" max="100" value="0"></label>
+          <label>Mid<input type="range" min="-100" max="100" value="0"></label>
+          <label>Low<input type="range" min="-100" max="100" value="0"></label>
+          <label>FX Send<input type="range" min="0" max="100" value="30"></label>
+          <label>Fader<input type="range" min="0" max="100" value="78"></label>
+        </article>
+        <article class="channel">
+          <h3>CH 2</h3>
+          <label>Gain<input type="range" min="0" max="100" value="55"></label>
+          <label>High<input type="range" min="-100" max="100" value="0"></label>
+          <label>Mid<input type="range" min="-100" max="100" value="0"></label>
+          <label>Low<input type="range" min="-100" max="100" value="0"></label>
+          <label>FX Send<input type="range" min="0" max="100" value="30"></label>
+          <label>Fader<input type="range" min="0" max="100" value="78"></label>
+        </article>
+        <article class="channel ext">
+          <h3>CH 3/4 Externos</h3>
+          <label>Entrada
+            <select>
+              <option>DVS Vinilo</option>
+              <option>CDJ 3</option>
+              <option>CDJ 4</option>
+            </select>
+          </label>
+          <label>Conmutador<input type="checkbox" checked> DVS/CDJ</label>
+          <label>Gain<input type="range" min="0" max="100" value="40"></label>
+          <label>EQ<input type="range" min="-100" max="100" value="0"></label>
+          <label>FX Send<input type="range" min="0" max="100" value="25"></label>
+        </article>
+      </div>
+      <div class="crossfader">
+        <label>Crossfader<input type="range" min="0" max="100" value="50"></label>
+      </div>
+      <div class="effects">
+        <h3>Multiefectos / Pistas</h3>
+        <button>Echo</button><button>Reverb</button><button>Flanger</button>
+        <button>Roll</button><button>Filter</button><button>Stutter</button>
+      </div>
+    </section>
+
+    <section class="deck deck-right">
+      <h2>Deck 2 (Motorizado)</h2>
+      <div class="jogwheel"></div>
+      <div class="transport">
+        <button>Play/Pause</button><button>Cue</button><button>Sync</button>
+      </div>
+      <div class="perf-grid">
+        <button>Hot Cue</button><button>Loop</button><button>Beat Jump</button><button>Slip</button>
+      </div>
+      <label>Pitch<input type="range" min="-50" max="50" value="0"></label>
+    </section>
+  </main>
+
+  <footer>
+    <p>Inspiración visual: flujo tipo Serato. Próximo paso: formas y detalles avanzados.</p>
+  </footer>
+</body>
+</html>
